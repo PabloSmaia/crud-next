@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Crud
+Projeto de cadastro de usuarios feito em Next.js.
+O projeto foi desenvolvido durante o curso de Next.js - Cod3r
 
-## Getting Started
+## Objetivos:
+Criar uma aplicação Web feita em Neque faça as 4 operações basicas de um cadastro (Criar, Ler, Atualizar e Deletar) usuários.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
+## Execução:
+Este projeto foi dividido em duas partes:
+
+~~Servidor firebase:
+Servidor simples que trata as requisições feitas pela aplicação front-end.
+Este servidor também gerencia um arquivo  que armazena todos os dados dos usuarios~~
+
+
+
+#### Front-end / Next.js
+Parte responsavel por disponibilizar uma interface grafica para o usuário e fazer as requisições com o servidor.
+
+
+## O que aprendi:
+Durante este projeto, consolidei melhor os conceitos:
+
+- [x] requisições HTML através do Axios;
+- [x] componentes do Next.js;
+- [x] Noções basicas sobre o bootstrap;
+- [x] Navegação utilizando Hooks;
+
+
+
+## Executando o serviço:
+* Para executar este projeto é necessario baixar o servidor backend (link já postado anteriormente).
+
+Entra no diretorio frontend e executa a aplicação react - http://localhost:3000 * Entrar neste link para visualizar a aplicação
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+npm dev run 
+```

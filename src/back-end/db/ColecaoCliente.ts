@@ -7,7 +7,7 @@ import ClienteRepositorio from '../../core/ClienteRepositorio';
 export default class ColecaoCliente implements ClienteRepositorio {
     
     #conversor = {
-        toFirestore(cliente: Cliente) {
+        toFirestore(cliente: Cliente): { nome: string; idade: number; } {
             return {
                 nome: cliente.nome,
                 idade: cliente.idade,
@@ -40,8 +40,6 @@ export default class ColecaoCliente implements ClienteRepositorio {
     }
 
     private colecao() {
-        return firebase
-            .firestore().collection('clientes')
-            .withConverter(this.#conversor)
+        return firebase.firestore().collection('clientes').withConverter(this.#conversor)
     }
 }
